@@ -13,7 +13,7 @@ import pandas as pd
 df = pd.read_csv('iris.data', header=None)
 print(df)
 ```
-<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/iris_1.png" width="40%"></p>
+<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/Iris/iris_1.png" width="40%"></p>
 
 - Columns 0-3 are the characteristics of the flower(sepal length, sepal width, petal length, petal width), and the fourth column is the name of the flower variety.
 - The first 50 groups are **Iris-setona**, the middle 50 groups are **Iris-versicolor**, and the last 50 groups are **Iris-virginica**.</p>
@@ -26,7 +26,7 @@ y = np.where(y=='Iris-setosa', 0, 1)
 ```
 - Use **np.where** to convert data, Convert y to 0 if it meets the condition, otherwise it is 1.
 
-<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/iris_2.png" width="70%"></p>
+<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/Iris/iris_2.png" width="70%"></p>
 
 ## Split dataset
 - Divide 100 sets of data into "Training" and "Testing".
@@ -57,7 +57,7 @@ def sigmoid(x):
 ```
 - sigmoid()is a common **Activation Function**,For more introduction can reference to the following URL 
 https://clay-atlas.com/blog/2019/10/19/machine-learning-chinese-sigmoid-function/
-<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/iris_3.png" width="40%"></p>
+<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/Iris/iris_3.png" width="40%"></p>
 
 ```
 def activation(x, w, b):
@@ -88,7 +88,7 @@ print('weights = ', weights, 'bias = ', bias)
 
 activation(x_test, weights, bias)
 ```
-<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/iris_4.png" width="80%"></p>
+<p align="center"><img src="https://github.com/chiardy90/iris_readme_pic/blob/main/Iris/iris_4.png" width="80%"></p>
 
 - Here is the result of training 1000 times.
 - The first 10 data are in the index 40-49, the last 10 data are in the index 50-59.
